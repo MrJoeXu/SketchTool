@@ -4,10 +4,10 @@ var color = '#000000';
 function initGrid(gridSize) {
 	var length = 640/gridSize;
 
-	for (var i=1; i<= gridSize*gridSize; i++) {
-		//for (var j=1; j<=gridSize; j++){		
+	for (var i=1; i<= gridSize; i++) {
+		for (var j=1; j<=gridSize; j++){		
 			$('#board').append('<div class="tile"></div>')
-		//};
+		};
 	};
 		$('.tile').css(
 		{'width': length, 
