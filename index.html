@@ -3,16 +3,25 @@
 <head>
 	<title>Sketch Tool</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+	<link href="stylesheets/hover.css" rel="stylesheet" media="all">
 </head>
 <body>
 	<div id="board">
 	</div>
-	<form>
-		Please Enter Numbers of Tiles for Each Side:
-		<input type="text" name ="size">
-		<input type="submit" id="submit">
-	</form>
-	<button id='reset'>Reset Board</button>
+
+	<div id='buttons'>
+		<button id='red' class='hvr-bounce-in'>Red</button>
+		<button id='orange' class='hvr-bounce-in'>Orange</button>
+		<button id='yellow' class='hvr-bounce-in' >Yellow</button>
+		<button id='green' class='hvr-bounce-in'>Green</button>
+		<button id='cyan' class='hvr-bounce-in'>Cyan</button>
+		<button id='blue' class='hvr-bounce-in'>Blue</button>
+		<button id='purple' class='hvr-bounce-in'>Purple</button>	
+	</div>
+
+		<button id='reset'>Reset Board</button>
+	<button id='size'>Change Board Size</button>
+	
 <script src="scripts/jquery.js"></script>
 <script src="scripts/script.js"></script>
 

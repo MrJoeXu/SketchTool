@@ -1,7 +1,7 @@
 #board {
 	width: 640px;
 	height: 640px;
-	background-color: white;
+	background-color: #D0D0D0;
 	margin:30px auto;
 	border-style: solid;
 	border-radius: 10px;
@@ -10,13 +10,60 @@
 }
 
 .tile {
-	width: 16px; height: 16px;
+	width: 16px; 
+	height: 16px;
+	margin-top: 0.05px;
 	float: left;
 	background-color: black; 
-	opacity: 0.3;
+	opacity: 0;
 }
 
 html {
 	background-color: #E9E9DC;
 }
 
+#buttons {
+	width: 800px;
+	margin: 50px auto;
+}
+
+button {
+	-webkit-border-radius: 20;
+	-moz-border-radius: 20;
+	border-radius: 50px;
+	border-width: 0;
+	font-family: Courier New;
+	color: #ffffff;
+	font-size: 0;
+	
+	height: 70px;
+	width: 70px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-decoration: none;
+}
+button:hover {
+	font-size: 12px;
+}
+
+#red {
+	background: #E9223C;
+}
+#orange {
+	background-color: #F3AF62;
+}
+#yellow{
+	background-color: #F9CD54;
+}
+#green{
+	background-color: #5ECB89;
+}
+#cyan{
+	background-color: #71D1BF;
+}
+#blue{
+	background-color: #3C9ADA;
+}
+#purple{
+	background-color: #A38CA6;
+}
