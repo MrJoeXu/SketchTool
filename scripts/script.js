@@ -1,5 +1,6 @@
 
-var color = '#000000';
+var color = black;
+var currentSize = 16;
 
 function initGrid(gridSize) {
 	var length = 640/gridSize;
@@ -66,7 +67,7 @@ function initKeyControll() {
 
 $('#reset').click(function(event) {
 	$('.tile').remove();
-	initGrid();
+	initGrid(currentSize);
 });
 
 
@@ -92,6 +93,9 @@ $('#blue').click(function(event) {
 $('#purple').click(function(event) {
 	color = '#612268';
 });
+$('#black').click(function(event) {
+	color = 'black';
+});
 
 $(document).ready(function() {
 	initGrid(16);
@@ -101,6 +105,7 @@ $(document).ready(function() {
 
 	$('#size').click(function(event) {
 		var input = prompt("Please Enter the numer of tiles for sides of board: \n (less than 100) ");
+		currentSize = input;
 		$('.tile').remove();
 		initGrid(input);
 	});	

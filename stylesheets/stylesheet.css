@@ -23,7 +23,11 @@ html {
 }
 
 #buttons {
-	width: 900px;
+	width: 800px;
+	margin: 50px auto 0;
+}
+#blackRow {
+	width: 930px;
 	margin: 50px auto;
 }
 
@@ -67,3 +71,27 @@ button:hover {
 #purple{
 	background-color: #A38CA6;
 }
+#black {
+	background-color: black;
+}
+
+#reset, #size{
+	background-color: #D0D0D0;
+	border-width: 4px;
+	border-style: solid;
+	border-color:#DCDCDC;
+	color: black;
+	font-size: 14px;
+	color: #694116;
+}
+#brush { 
+	margin-top: 10px;
+    float: left;
+    margin-right: 60px;
+}
+#eraser {
+	margin-top: 10px;
+	float: right;
+	margin-right: 20px;
+}
+
